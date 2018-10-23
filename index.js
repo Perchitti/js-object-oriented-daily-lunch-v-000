@@ -49,7 +49,7 @@ class Customer {
 
   meals() {
     return this.deliveries().filter(function (delivery) {
-      if(delivery.meal === meal){
+      if(delivery.meal !== delivery.meal){
         return delivery.meal()
       }
     });
